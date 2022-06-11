@@ -8,14 +8,28 @@ function ShowDetail(props) {
     return movie.id === id;
   });
 
-  const { title, original_title, image } = selectedMovie;
+  const {
+    title,
+    original_title,
+    director,
+    producer,
+    release_date,
+    running_time,
+    rt_score,
+    description,
+  } = selectedMovie;
 
   return (
     <section>
       hello
       <h2>{title}</h2>
       <h3>{original_title}</h3>
-      <img src={image} alt={title} />
+      <p>Director: {director}</p>
+      <p>Producer: {producer}</p>
+      <p>Release Date: {release_date}</p>
+      <p>Running Time: {running_time} Minutes</p>
+      <p>Rotten Tomato Score: {rt_score}</p>
+      <p>Description: {description}</p>
       <Link to="/">Back</Link>
     </section>
   );

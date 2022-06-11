@@ -5,7 +5,7 @@ function Movie(props) {
   const { id, title, original_title, image } = props.moviesData;
 
   return (
-    <section>
+    <section className="movie">
       <h2>{title}</h2>
       <h3>{original_title}</h3>
       <img src={image} alt={title} />

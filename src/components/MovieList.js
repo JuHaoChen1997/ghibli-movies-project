@@ -1,4 +1,5 @@
 import Movie from "./Movie";
+import "./MovieList.css";
 
 function MovieList(props) {
   const { moviesData } = props;
